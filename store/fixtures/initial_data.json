@@ -1,0 +1,262 @@
+[
+{
+  "model": "store.category",
+  "pk": 1,
+  "fields": {
+    "name": "Skincare",
+    "slug": "skincare"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 2,
+  "fields": {
+    "name": "MakeUP",
+    "slug": "makeup"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 3,
+  "fields": {
+    "name": "Haircare",
+    "slug": "haircare"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 4,
+  "fields": {
+    "name": "BodyCare",
+    "slug": "bodycare"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "SKIN1004 Madagascar Centella Ampoule Facial Serum",
+    "brand": "SKIN1004",
+    "code": "001",
+    "description": "- SKIN1004's signature ampoule offers hydrating, barrier improving, soothing and antioxidant properties\r\n- Repairs damaged skin while regulating its water-oil balance\r\n- Penetrates deep within skin for a more moisturized complexion\r\n- Infused with Centella Asiatica extract from Madagascar to moisturize, soothe and improve skin barrier for healthier-looking skin\r\n- Ampoule with a light watery texture and non-sticky formula\r\n- Non sticky moisturizing formula\r\n- Calms and hydrates sensitive skin\r\n- Suitable for sensitive skin strong calming care",
+    "price": "13.00",
+    "original_price": "19.00",
+    "discount_percentage": 32,
+    "image": "products/31JEHBTwa-S._SS400_.jpg",
+    "stock": 10,
+    "weight": "190g (0.42 lbs)",
+    "spf": "NO",
+    "product_type": "NO"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Hyalu-Cica Water-Fit Sun Serum UV – SKIN1004",
+    "brand": "SKIN1004",
+    "code": "002",
+    "description": "A lightweight serum-like sunscreen that hydrates and soothes the skin for a fresh, no white cast finish. Reformulated with Panthenol and extracts of rice, oat, and soybean to help maintain hydration and comfort",
+    "price": "16.15",
+    "original_price": "19.00",
+    "discount_percentage": 15,
+    "image": "products/images.jpg",
+    "stock": 10,
+    "weight": "15ml",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "[SKIN1004] Madagascar Centella Tone Brightening Capsule Ampoule 100ml",
+    "brand": "SKIN1004",
+    "code": "003",
+    "description": "- An ideal daily-use ampoule with 4% Niacinamide, 2% Tranexamic Acid, and encapsulated Madewhite™ for gentle and effective dark spot correction.\r\n- A dual-functional toner that provides deep hydration and improves skin tone.\r\n- Essence-like textured ampoule with Madecassoside micro-beads that immediately melts on the skin, quickly absorbs with a soft and non-sticky finish.\r\n- Fast absorbing skin-tightening water type. Watery ampoule containing white capsules of MadeWhite smoothly absorbs into your skin which takes care of your skin to tight and bright with no slipperiness.\r\n- Mildly acidic formula to match the pH level of the skin to maintain pH balance and care for the skin barrier.\r\n- Features patented ingredient MadeWhite™, which consists of Madagascan centella asiatica extract on top of niacinamide for skin-soothing and brightening benefits.\r\n- Patented ingredient with Madecassoside brightens the skin tone and gives the skin its natural glow. \r\n- Madecassoside is rich in amino acids, beta carotene, fatty acids, and phytochemicals.\r\n- Tranexamic acid helps reduce melanin production and improve discoloration after acne breakouts and sun damage. Provides prevention and pigmentation care all at once.\r\n- Contains papaya and apple extracts for gently removing dead skin cells.\r\n- Leaves your skin supple, balanced and brightened.",
+    "price": "15.00",
+    "original_price": "25.00",
+    "discount_percentage": 40,
+    "image": "products/61BitEhf6OL17742482418570a401759a07a.jpg",
+    "stock": 10,
+    "weight": "261g (0.58 lbs)",
+    "spf": "NO",
+    "product_type": "NO"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "category": 2,
+    "name": "Mask Fit Red Cushion",
+    "brand": "TIRTIR",
+    "code": "004",
+    "description": "Exceptional coverage and longevity make this cushion foundation ideal for oily skin, though oxidation and shade darkening require careful application and proper skincare prep.",
+    "price": "12.00",
+    "original_price": "20.00",
+    "discount_percentage": 40,
+    "image": "products/10C.webp",
+    "stock": 10,
+    "weight": "18g",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 5,
+  "fields": {
+    "category": 3,
+    "name": "[HASUO] Herbal Essential Shampoo (750ml/25.36fl.oz)",
+    "brand": "HASUO",
+    "code": "005",
+    "description": "This shampoo keeps your scalp and hair healthy and clean as it maintains the oil and moisture balance on the scalp. It shows the effects of hair loss prevention, hair growth and increase of hair thickness, hair prevention nutrient supply to the scalp and strengthening hair roots.",
+    "price": "20.00",
+    "original_price": "40.00",
+    "discount_percentage": 50,
+    "image": "products/bdff_f0545163-4380-4a81-8df9-c844d31fe0fc.jpg",
+    "stock": 10,
+    "weight": "750mL/25.36oz",
+    "spf": "NO",
+    "product_type": "NO"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 6,
+  "fields": {
+    "category": 4,
+    "name": "APLB Glutathione Niacinamide Body Lotion – 300ML",
+    "brand": "APLB",
+    "code": "006",
+    "description": "BASIC SUMMARY : Glutathione Niacinamide Body Lotion / LIPO GLUTA NIAC CEN 12.5% (Glutathione 1,000ppm, Niacinamide 1,000ppm, Centella Asiatica Extract 12.3%), combined with Centella 3x Complex\r\nCENTELLA 3X COMPLEX: The following components of Madecassic Acid, Asiaticoside, and Asiatic Acid come from a leaf called “Centella asiatica”.\r\nPRESERVE THE MOISTURE: Infused with Hyaluronic Acid and Beta Glucan.\r\nSHINE AND GLOW: Infused with Vitamin C, Niacinamide (Vitamin B3 and Nicotinamide)\r\nALLEVIATE FOR SENSITIVE SKIN: Solanum Melongena (Eggplant) extract\r\nMade in Korea",
+    "price": "30.00",
+    "original_price": null,
+    "discount_percentage": 0,
+    "image": "products/APLB-Glutathione-Niacinamide-Body-Lotion-300ML-9.jpg",
+    "stock": 10,
+    "weight": "300ML",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 7,
+  "fields": {
+    "category": 1,
+    "name": "PDRN Hyaluronic Acid 100 Moisturizing Cream",
+    "brand": "Anua",
+    "code": "007",
+    "description": "Formulated with PDRN (derived from salmon DNA), facial moisturizer features low-molecular PDRN that improves absorption, helping revitalize skin from within and restore a healthy, radiant glow.",
+    "price": "12.50",
+    "original_price": "25.00",
+    "discount_percentage": 50,
+    "image": "products/anua-us-moisturizer-pdrn-hyaluronic-acid-100-moisturizing-cream-1178755386.webp",
+    "stock": 10,
+    "weight": "60ml",
+    "spf": "NO",
+    "product_type": "Moisture Lock"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 8,
+  "fields": {
+    "category": 1,
+    "name": "Zero Pore Madecassoside Pads (Mild) - medicube.us",
+    "brand": "medicube",
+    "code": "008",
+    "description": "Introducing the Zero Pore Madecassoside Pads (MILD): Your Solution for Ultra-Sensitive Skin! Unlock clearer pores and smoother skin with our innovative Zero Pore Madecassoside Pads (Mild). Crafted with gentle PHA for effective exfoliation and reduction in pore visibility, our pads have undergone multiple trials tailored to sensitive skin, aiming to discover the most optimal combination of ingredients. We've perfected our patented Pore Care Complex with a lighter formula to help your delicate skin remains calm and moisturized.",
+    "price": "24.80",
+    "original_price": "31.00",
+    "discount_percentage": 40,
+    "image": "products/Untitled.jpg",
+    "stock": 10,
+    "weight": "55g (70 pads)",
+    "spf": "NO",
+    "product_type": "PHA (Gluconolactone), Panthenol, Madecassoside, Hyaluronic Acid, Centella Asiatica Extract"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 14,
+  "fields": {
+    "category": 1,
+    "name": "TULA Skincare 24-7 Hydrating Day & Night Cream, Anti-Aging Face Moisturizer for Dryness & Dullness with Prebiotic Extracts & Hyaluronic Acid",
+    "brand": "TULA",
+    "code": "009",
+    "description": "A DAILY SKIN SAVER: This gentle face cream delivers daily hydration for all skin types, including sensitive skin. Infused with prebiotic extracts, apple, watermelon, squalane, collagen & peptides to nourish dry skin.\r\n24-7 HYDRATION: Locks in moisture & maintain skin balance. Help even the look of skin tone & improve smoothness.\r\nMOISTURIZE & GLOW: Apply on clean skin after serum or treatments. Use daily, AM & PM. Follow with SPF in the morning and eye cream as needed. Ideal for dry, sensitive, or combination skin. Perfect for men and women.\r\nPowered by a signature superblend of prebiotics to support a healthy and resilient microbiome.\r\nDoctor-founded clinical efficacy. Portable clean beauty that replenishes skin health instantly.",
+    "price": "23.00",
+    "original_price": "25.00",
+    "discount_percentage": 10,
+    "image": "products/71QJ0fZUnGL._SL1500_.jpg",
+    "stock": 8,
+    "weight": "15 Milliliters",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 16,
+  "fields": {
+    "category": 3,
+    "name": "3-Month Hair Growth Set",
+    "brand": "VT COSMETICS",
+    "code": "011",
+    "description": "3-Month Hair Growth Set\r\n\r\nPDRN Reedle shot Hair Ampoule 100dl 1ea\r\nPDRN Reedle shot Hair Ampoule 300dl 1ea\r\nPDRN Reedle shot Hair Ampoule 700dl 1ea\r\n\r\nThis 3-step hair ampoule bundle is designed as a step-by-step care program, starting with gentle daily care and moving toward more intensive treatment as your scalp and hair needs evolve.\r\n\r\nBegin with 100dl to gently soothe the scalp and support healthy-looking hair for everyday use.\r\nOnce finished, move on to 300dl for more concentrated care that helps improve hair elasticity and shine.\r\nKeep your journey with 700dl, formulated with 9GF and caffeine to energize the scalp and support stronger, healthier-looking hair.\r\n\r\nFollow the full 3-step program to support a calmer scalp and stronger, healthier-looking hair over time.",
+    "price": "120.00",
+    "original_price": null,
+    "discount_percentage": 0,
+    "image": "products/2_3_26e83a20-12b6-4a69-ac1d-f9a44e2b41531.jpg",
+    "stock": 10,
+    "weight": "300ML",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 17,
+  "fields": {
+    "category": 1,
+    "name": "Bio Collagen-Real Deep Mask",
+    "brand": "Biodance",
+    "code": "012",
+    "description": "Authenticity Guaranteed – Official BIODANCE Product\r\n\r\nDEEP HYDRATION\r\nThe oligo-hyaluronic acid found in the Biodance Bio-Collagen Real Deep Mask has a moisturizing effect that is superior to that of regular hyaluronic acid. It quickly hydrates the skin's surface and penetrates deeper layers of skin resulting in a healthy and moisturized complexion.\r\n\r\nPORE TIGHTENING & FIRMING\r\nUltra-low molecular collagen maximizes skin penetration and absorption. It refines enlarged pores, improves skin elasticity instantly after application and visibly smooths out the appearance of fine lines and wrinkles.\r\n\r\nSTRENGTHEN THE SKIN’S BARRIER\r\nOur hydrogel mask contains 3 different kinds of probiotics that strengthen the skin’s barrier and prevent skin aging.\r\n\r\nHYPOALLERGENIC\r\nThis deep hydrating facial mask is formulated with non-toxic & non-irritant ingredients. It is free of allergic reaction-causing ingredients and 19 other harsh, controversial ingredients. It is completely safe for sensitive skin.\r\n\r\nBiodance skincare products focus on the balance of effective ingredients and long-lasting results beyond temporary effects.",
+    "price": "19.00",
+    "original_price": null,
+    "discount_percentage": 0,
+    "image": "products/2510_4_388c8df8-fc8d-45eb-af91-a9d884fad801.webp",
+    "stock": 10,
+    "weight": "400ML",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 18,
+  "fields": {
+    "category": 2,
+    "name": "Reflect Glow Prep Primer",
+    "brand": "TIRTIR",
+    "code": "013",
+    "description": "1. Makeup Grip & LongevityLocks in Makeup: It acts as a high-performance \"grip\" primer that creates a smooth canvas, preventing your foundation or cushion from breaking down, separating, or settling into fine lines throughout the day.  Pairs with Foundation: While it works under any base, it is formulated to pair perfectly with TIRTIR's viral cushion foundations to optimize their wear. \r\n2. Radiance & Glass-Skin GlowBoosts Luminous Shine: It utilizes a specialized red pearl base to give the skin a healthy, luminous, \"crystal-glow\" or \"glass-skin\" finish.  Corrects Dullness: It immediately revives tired, flat, or dull-looking skin, maintaining that fresh radiance for up to 24 hours.  \r\n3. Hydration & Skin PlumpingIntensive Skincare Prep: Powered by 95% skincare-based ingredients (like Niacinamide and Peptinol), it acts like a gel-serum to deeply moisturize dry skin and smooth out rough patches.  Improves Elasticity: It immediately improves skin volume and elasticity, giving the face a visibly plumper, bouncy appearance.",
+    "price": "20.10",
+    "original_price": null,
+    "discount_percentage": 0,
+    "image": "products/Group_4372.png",
+    "stock": 10,
+    "weight": "30ML",
+    "spf": "SPF50+ PA++++",
+    "product_type": "Very High Protection"
+  }
+}
+]

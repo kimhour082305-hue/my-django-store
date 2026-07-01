@@ -3,7 +3,7 @@
 {% block content %}
 <div style="font-family: sans-serif; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px;">
     <h2 style="color: #c9184a; margin: 0 0 20px 0; font-size: 22px; font-weight: bold;">Dashboard Statistics</h2>
-    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
         <div style="flex: 1; background: #fff0f3; padding: 20px; border-radius: 8px; border-left: 4px solid #ff4d6d;">
             <h3 style="margin: 0; color: #590d22; font-size: 14px; text-transform: uppercase;">Total Revenue</h3>
             <p style="margin: 10px 0 0 0; font-size: 24px; font-weight: bold; color: #c9184a;">${{ total_revenue }}</p>
@@ -15,7 +15,8 @@
     </div>
 
     <h3 style="color: #333; margin: 0 0 15px 0; font-size: 18px;">Recent Customer Purchases</h3>
-    <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
+    <div style="overflow-x: auto; width: 100%;">
+        <table style="width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
         <thead>
             <tr style="background: #f8f9fa; color: #495057; font-size: 14px;">
                 <th style="padding: 12px; border-bottom: 2px solid #dee2e6;">Order ID</th>
@@ -47,16 +48,18 @@
             {% endfor %}
         </tbody>
     </table>
+    </div>
 </div>
 
 <div style="font-family: sans-serif; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
     
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 25px; gap: 15px;">
         <h2 style="color: #c9184a; margin: 0; font-size: 22px; font-weight: bold;">Product Inventory Directory</h2>
-        <a href="{% url 'product_create' %}" style="background: #198754; color: white; padding: 12px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 14px;">+ Add New Product</a>
+        <a href="{% url 'product_create' %}" style="background: #198754; color: white; padding: 12px 20px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 14px; white-space: nowrap;">+ Add New Product</a>
     </div>
 
-    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+    <div style="overflow-x: auto; width: 100%;">
+        <table style="width: 100%; min-width: 800px; border-collapse: collapse; text-align: left;">
         <thead>
             <tr style="background: #ffd6ba; color: #333; font-size: 14px;">
                 <th style="padding: 12px; border-radius: 4px 0 0 4px;">Thumbnail</th>
@@ -103,5 +106,6 @@
             {% endfor %}
         </tbody>
     </table>
+    </div>
 </div>
 {% endblock content %}

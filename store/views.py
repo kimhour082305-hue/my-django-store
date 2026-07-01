@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404  # pyrefly: ignore [missing-import]
 from django.core.paginator import Paginator
-from .models import Product, Category
+from .models import Product, Category, Order, OrderItem
+from django.db.models import Sum, Count
 from .forms import ProductForm
 from django.contrib.auth import login, authenticate, logout  # pyrefly: ignore [missing-import]
 from django.contrib.auth.models import User  # pyrefly: ignore [missing-import]
@@ -155,7 +156,16 @@ def cart_remove(request, product_id):
 @staff_member_required(login_url='auth_page')
 def inventory_list(request):
     products = Product.objects.all().order_by('-id')
-    return render(request, 'store/product_list.html', {'products': products})
+    recent_orders = Order.objects.all().order_by('-created_at')[:10]
+    total_revenue = Order.objects.aggregate(Sum('total_price'))['total_price__sum'] or 0
+    total_purchases = Order.objects.count()
+    context = {
+        'products': products,
+        'recent_orders': recent_orders,
+        'total_revenue': total_revenue,
+        'total_purchases': total_purchases
+    }
+    return render(request, 'store/product_list.html', context)
 
 # 7. CREATE: Save Fresh Product Rows to Database
 @staff_member_required(login_url='auth_page')
@@ -223,9 +233,22 @@ def checkout_view(request):
     total_bill = sum(item['price'] * item['quantity'] for item in cart.values())
     
     if request.method == 'POST':
+        # Create the Order in the database
+        order = Order.objects.create(user=request.user, total_price=total_bill)
+        
+        # Create OrderItems for each product in the cart
+        for pid_str, item_data in cart.items():
+            product = get_object_or_404(Product, id=int(pid_str))
+            OrderItem.objects.create(
+                order=order,
+                product=product,
+                quantity=item_data['quantity'],
+                price=item_data['price']
+            )
+
         # Clear the shopping cart session data upon payment completion
         request.session['cart'] = {}
-        return redirect('order_success') 
+        return redirect('order_success')
         
     return render(request, 'store/checkout.html', {'cart': cart, 'total_bill': total_bill})
 
